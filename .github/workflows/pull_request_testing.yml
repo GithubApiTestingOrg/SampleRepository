@@ -30,8 +30,11 @@ jobs:
             console.log("user ${{ github.actor }} has started the workflow")
           }
 
-          console.log("${{ github.event.action }}")
-          if ("${{ github.event.action }}" === "opened" && valid_user) {
+          console.log("${{ github.event_name }}")
+          if ("${{ github.event_name  }}" === "workflow_dispatch") {
+            console.log("starting job from workflow dispatch")
+          }
+          else if ("${{ github.event.action }}" === "opened" && valid_user) {
             console.log("starting job from pull request creation")
           }
           else if ("${{ github.event.action }}" === "labeled" && "${{ github.event.label.name }}" == "RUN AUTOTESTER" && valid_user) {
