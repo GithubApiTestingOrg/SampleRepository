@@ -56,6 +56,7 @@ jobs:
         github_token: ${{ github.token }}
   test_pr:
     runs-on: self-hosted
+    needs: workflow_handler
     steps:
     - name: TODO
       run: echo "RUNNING ON HPC MACHINE"
