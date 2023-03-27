@@ -1,0 +1,10 @@
+name: pull_request_testing
+
+on:
+  pull_request:
+    types:
+      - labeled
+      - opened
+    branches:
+    - master
+  workflow_dispatch:
