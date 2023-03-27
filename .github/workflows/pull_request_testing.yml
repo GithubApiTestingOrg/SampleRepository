@@ -58,4 +58,4 @@ jobs:
     runs-on: self-hosted
     steps:
     - name: TODO
-      run: echo "TODO"
+      run: echo "RUNNING ON HPC MACHINE"
