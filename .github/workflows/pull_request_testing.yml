@@ -16,7 +16,7 @@ jobs:
     - name: TODO
       run: echo "TODO"
   test_pr:
-    runs-on: ubuntu-22.04
+    runs-on: self-hosted
     steps:
     - name: TODO
       run: echo "TODO"
