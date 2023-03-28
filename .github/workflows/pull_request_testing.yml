@@ -6,7 +6,7 @@ on:
       - labeled
       - opened
     branches:
-    - master
+    - main
   workflow_dispatch:
 
 jobs:
